@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <title>Raimundo's Madeiras </title>    <style>
+        html {
+            scroll-behavior: auto;
+        }
+
+        #nav-menu {
+            padding: 5;
+            background-color: rgb(203, 165, 128);
+        }
+
+        #nav-menu li {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: inline;
+            padding: 5rem;
+            cursor: context-menu;
+        }
+
+        #nav-menu li a {
+            display: inline;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 5px;
+            display: inline-block;
+        }
+
+        #nav-menu li a:hover {
+            background-color: rgb(150, 75, 0);
+        }
+
+        #h1-li {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #header {
+            position: absolute;
+            left: 800px;
+            font-family: DejaVu Sans Mono;
+            font-size: 30px;
+            color: rgb(165, 82, 0);
+        }
+
+        #img {
+            position: left;
+            margin-top: 20px;
+            padding: 65px;
+            left: 500px;
+            width: 350px;
+            height: 220px;
+        }
+
+        .td-quem-somos {
+            color: rgb(10, 10, 10);
+            font-family: optima;
+            padding: 5px 20px;
+            font-size: 130%;
+            text-indent: 5%;
+            line-height: 180%;
+        }
+
+        .container-fotos {
+            color: #fff;
+            padding: 2px;
+        }
+
+        .container-fotos-rolar {
+            overflow-x: scroll;
+            /*lateral / remover as barras laterais*/
+            overflow-y: hidden;
+            /*horizontal /usa o hidden pq nao quero exibir o y*/
+            white-space: nowrap;
+            padding: 1rem;
+        }
+
+        .container-fotos-item {
+            display: inline-block;
+            /*fazer uns blocos*/
+            transition: all.2 ease-in-out;
+            /*2 milisegundos / transição*/
+            max-width: 10em;
+            margin-right: 6rem;
+            padding: 5px;
+        }
+
+        .container-fotos-title {
+            background-color: rgb(229, 210, 191);
+            padding: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: medium;
+            text-align: center;
+        }
+
+        .container-fotos-title a.hover {
+            background-color: rgb(176, 120, 64);
+        }
+    </style>
+
+<body><nav id="nav-menu"><ul> <li><a href=>Sobre nós</a></li> <li><a
+                    href=>Produtos</a></li> <li><a href=>Onde trabalhamos</a></li> <li><a
+                    href=>Contatos</a></li> <li><a href=>Redes Sociais</a></li></ul> </nav> 
+    <table> <p id="header"> Quem somos nós?</p> <tr> <td><img id="img" width="500px"
+                    align="center" src="img/imagem.feira.jpeg"> </td> <td class="td-quem-somos">Olá, somos um
+                casal, Tânia e Milton, artesãos a mais ou menos 3 anos. A história da <i><b>Raimundo's
+                        Madeira</b></i> começa lá em 2021, no meio de uma pandemia global. Onde juntamos a paixão pela
+                criação de algo novo e as dificuldades que todos nós enfrentamos naquela época. <br> Foram
+                muitos desafios,desde a compra de maquinário até as escolhas dos projetos, idéias e
+                criações. Porém, com muito esforço e dedicação, cá estamos nós 3 anos depois, com muito
+                orgulho da nossa trajetória e de brinde muitos clientes satisfeitos, isso que nos motiva.</td>              </tr>    </table>   
+    <hr> <!------Catalogo--> <div class=container-fotos> <h5 class="container-fotos-title">Produtos</h5>
+       <div class="container-fotos-rolar"> <div class="container-fotos-item"> <img
+                    src="img/foto3.jpeg" height="220" width="220"> </div> <div
+                class="container-fotos-item"> <img src="img/foto4.jpeg" height="220" width="220">                    </div>            <div class="container-fotos-item">                <img src="img/foto5.jpeg"
+                    height="220" width="220"> </div><div class="container-fotos-item">
+                <img src="img/foto6.jpeg" height="220" width="220"></div><div
+                class="container-fotos-item"><img src="img/foto1.jpeg" height="220" width="220">
+                </div><div class="container-fotos-item"><img src="img/foto 2.jpg"
+                    height="220" width="220"></div></div></div>
+</body>
+
+</html>
