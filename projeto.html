@@ -47,9 +47,20 @@
             padding: 5px 20px;
             font-size:130%;   
             text-indent: 5%;
-            line-height:180%;
-                     
+            line-height:180%;            
         } 
+        .paragrafo_form{
+            display: flex;
+            text-align: center;
+        }
+        .form{
+            width: 50%;
+            margin-left: 25%;
+        }
+        .form input, textarea, select{
+           width: 100%;
+           margin: 10px;
+        }
         .footer{
                 display: flex;
                 flex-wrap: wrap;
@@ -88,6 +99,39 @@
             dedicação, cá estamos nós 3 anos depois, com muito orgulho da nossa trajetória e de brinde muitos clientes satisfeitos, isso que nos motiva.</td>    
         </tr>
     </table>
+    </section>
+    
+    </section>
+    
+    <section id="formulario" class="paragrafo_form form">
+
+    <form method="post" action="cadastrado.html">
+
+        <h3>Cadastre-se para receber novidades sobre os produtos da loja!!! </h3>
+
+        <label>Nome:</label>
+
+        <input type=”text” name=“nome” required>
+
+        
+
+        <label>E-mail:</label>
+
+        <input type="email" name="email" required>
+
+
+
+        <label>Telefone:</label>
+
+        <input type="tel" name="Telefone" required>
+
+        <button type="submit">Enviar</button>
+
+        <button type="reset">Apagar</button>
+
+    </form>
+
+    </section>  
     <footer>
         <div>
             <h3>RAIMUNDO'S MADEIRA</h3>
