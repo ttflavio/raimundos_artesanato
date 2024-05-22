@@ -1,0 +1,26 @@
+#nav-menu{        
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5;
+    background-color: #cba580;     
+}
+#nav-menu li{
+    font-size: 120%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display:inline;
+    padding: 1rem;
+    cursor:context-menu;   
+}
+#nav-menu li a{
+    display:inline;
+    color: #ffffff;
+    text-decoration:none;
+    padding: 7px;
+    display:inline-block;
+    
+}
+#nav-menu li a:hover {
+    background-color: rgb(150, 75, 0);
+    
+}
