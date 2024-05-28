@@ -1,143 +1,204 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <title>Raimundo's Madeiras </title>    
-    <style>
-        html {
-            scroll-behavior: auto;
-        }
-
-        #nav-menu {
-            padding: 5;
-            background-color: rgb(203, 165, 128);
-        }
-
-        #nav-menu li {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            display: inline;
-            padding: 5rem;
-            cursor: context-menu;
-        }
-
-        #nav-menu li a {
-            display: inline;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 5px;
-            display: inline-block;
-        }
-
-        #nav-menu li a:hover {
-            background-color: rgb(150, 75, 0);
-        }
-
-        #h1-li {
-            text-align: center;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-
-        #header {
-            position: absolute;
-            left: 800px;
-            font-family: DejaVu Sans Mono;
-            font-size: 30px;
-            color: rgb(165, 82, 0);
-        }
-
-        #img {
-            position: left;
-            margin-top: 20px;
-            padding: 65px;
-            left: 500px;
-            width: 350px;
-            height: 220px;
-        }
-
-        .td-quem-somos {
-            color: rgb(10, 10, 10);
-            font-family: optima;
-            padding: 5px 20px;
-            font-size: 130%;
-            text-indent: 5%;
-            line-height: 180%;
-        }
-
-        .container-fotos {
-            color: #fff;
-            padding: 2px;
-        }
-
-        .container-fotos-rolar {
-            overflow-x: scroll;
-            /*lateral / remover as barras laterais*/
-            overflow-y: hidden;
-            /*horizontal /usa o hidden pq nao quero exibir o y*/
-            white-space: nowrap;
-            padding: 1rem;
-        }
-
-        .container-fotos-item {
-            display: inline-block;
-            /*fazer uns blocos*/
-            transition: all.2 ease-in-out;
-            /*2 milisegundos / transição*/
-            max-width: 10em;
-            margin-right: 6rem;
-            padding: 5px;
-        }
-
-        .container-fotos-title {
-            background-color: rgb(229, 210, 191);
-            padding: 10px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: medium;
-            text-align: center;
-        }
-
-        .container-fotos-title a.hover {
-            background-color: rgb(176, 120, 64);
-        } 
-    </style>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <title>Raimundo's Madeiras</title>
+    <link rel="stylesheet" href="projeto.css">
+</head>
 <body>
-    <nav id="nav-menu">
-        <ul> 
-            <li><a href=>Sobre nós</a></li> 
-            <li><a href=>Produtos</a></li>
-            <li><a href=>Onde trabalhamos</a></li> 
-            <li><a href=>Contatos</a></li>
-            <li><a href=>Redes Sociais</a></li>
-        </ul> 
-    </nav> 
-    <table> 
-        <p id="header"> Quem somos nós?</p>
-        <tr>
-            <td><img id="img" width="500px" align="center" src="img/imagem.feira.jpeg"> </td>
-            <td class="td-quem-somos">Olá, somos um casal, Tânia e Milton, artesãos a mais ou menos 3 anos. A história
-                    da <i><b>Raimundo's Madeira</b></i> começa lá em 2021, no meio de uma pandemia global. Onde juntamos a
-                    paixão pela criação de
-                    algo novo e as dificuldades que todos nós enfrentamos naquela época. <br> Foram muitos desafios,
-                    desde a compra de maquinário até as escolhas dos projetos, idéias e criações. Porém, com muito esforço e
-                    dedicação, cá estamos nós 3 anos depois, com muito orgulho da nossa trajetória e de brinde muitos
-                    clientes satisfeitos, isso que nos motiva.
-            </td>
-        </tr>
-        </table>
-        <hr>
-        <!---Catalogo--->
-        <div class=container-fotos> 
-            <h5 class="container-fotos-title">Produtos</h5>
-        <div class="container-fotos-rolar"> 
-        <div class="container-fotos-item"> 
-            <img src="img/foto3.jpeg" height="220" width="220"> </div> <div
-                class="container-fotos-item"> <img src="img/foto4.jpeg" height="220" width="220">                    </div>            <div class="container-fotos-item">                <img src="img/foto5.jpeg"
-                    height="220" width="220"> </div><div class="container-fotos-item">
-                <img src="img/foto6.jpeg" height="220" width="220"></div><div
-                class="container-fotos-item"><img src="img/foto1.jpeg" height="220" width="220">
-                </div><div class="container-fotos-item"><img src="img/foto 2.jpg"
-                    height="220" width="220"></div></div></div>
-</body>
+    <nav class="navbar" id="voltar-ao-topo">
+        <img src="img/logonova.png" alt="">
+        <div class="logo">Raimundo's Madeiras</div>
+        <input type="checkbox" id="toggle" class="toggle-checkbox">
+        <label for="toggle" class="toggle-button">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </label>
 
+        
+        <ul class="nav-links">
+            <li><a href="#rolamento-header">Quem somos</a></li>
+            <li><a href="#shop">Catálogo</a></li>
+            <li><a href="#rolamento-ideias">Idéias criativas</a></li>
+            <li><a href="#footer-rolamento">Contatos</a></li>
+        </ul>
+    </nav>
+    <section class="sobre">
+        <div class="interface">
+            <div class="flex">
+                <div class="img-cabeçalho">
+                    <img src="img/imagemfeira.jpeg" alt="">
+                </div><!--img-sobre-->
+
+                <div class="txt-sobre">
+                    <h2 id="rolamento-header">Sejam bem-vindos, <span>Somos a Raimundo's Madeiras... </span></h2>
+                    <p class="paragrafo-quem-somos" >Olá, somos um casal, Tânia e Milton, artesãos a mais ou menos 3 anos. A história 
+                        da <i><b>Raimundo's Madeira</b></i> começa lá em 2021, em meio a uma pandemia global. Onde juntamos a paixão pela criação de 
+                        algo novo e as dificuldades que todos nós enfrentamos naquela época. Foram muitos desafios,
+                        desde a compra de maquinário até as escolhas dos projetos, idéias e criações. Porém, com muito esforço e 
+                        dedicação, cá estamos nós 3 anos depois, com muito orgulho da nossa trajetória e de brinde muitos clientes satisfeitos, isso que nos motiva. <br> <b>Nossa missão</b> é proporcionar a melhor experiência aos nossos clientes, 
+                        desde o primeiro contato até a entrega dos produtos.
+                        Saber que conseguimos superar suas expectativas nos enche de alegria e motivação para continuar oferecendo o melhor em termos de qualidade, design e atendimento.</p>
+                </div><!--txt-sobre-->
+            </div><!--flex-->
+        </div><!--interface-->
+    </section><!--sobre-->
+    <hr>
+    <p class="produtos-disponiveis">Produtos Disponíveis</p>
+    <div id="shop"> 
+        <div class="galeria">
+        <div class="item">
+                <img src="https://i.pinimg.com/564x/02/9c/c3/029cc385cdc78806e1619339e09cd397.jpg"  alt="item2">
+                <p>Móvel para temperos e outros</p>
+                <!--<h6>R$150,00</h6>-->
+                <a href="https://web.whatsapp.com/send?phone=5583987754278" target="_blank">
+                    <button class="compre">R$ 150,00 <i class='bx bxs-purchase-tag-alt' ></i></button>
+                </a>
+        </div>
+        <div class="item">
+                <h3></h3>
+                <img src="https://i.pinimg.com/564x/ab/8b/d1/ab8bd1bc86ea639e1f1715e314c35ca8.jpg" alt="item3">
+                <p>Banquinhos para suculentas</p>
+                <!--<h6>R$35,00</h6>-->
+                <a href="https://web.whatsapp.com/send?phone=5583987754278" target="_blank">
+                    <button class="compre">R$ 35,00 <i class='bx bxs-purchase-tag-alt' ></i></button>
+                </a>
+        </div>
+        <div class="item">
+                <h3></h3>
+                <img src="https://i.pinimg.com/564x/b8/7f/ca/b87fca69d3c60637904a114921fa731a.jpg">
+                <p>Estante Multiuso</p>
+                <!--<h6>R$100.00</h6>-->
+                <a href="https://web.whatsapp.com/send?phone=5583987754278" target="_blank">
+                    <button class="compre">R$ 100,00 <i class='bx bxs-purchase-tag-alt' ></i></button>
+                </a>
+        </div>
+        <div class="item">
+                <h3></h3>
+                <img src="https://i.pinimg.com/736x/64/1d/3c/641d3c8fd212d6551db493c332adc000.jpg" alt="item4">
+                <p>Estante para Livros</p>
+                <!--<h6>R$80.00</h6>-->
+                <a href="https://web.whatsapp.com/send?phone=5583987754278" target="_blank">
+                    <button class="compre">R$ 80,00 <i class='bx bxs-purchase-tag-alt' ></i></button>
+                </a>
+        </div>
+        <div class="item">
+                <h3></h3>
+                <img src="https://i.pinimg.com/564x/14/0a/28/140a281b52d45830486e5ca4a888f2f1.jpg" alt="item3">
+                <p>Porta chaves e Porta Celular</p>
+                <!--<h6>R$70.00</h6>-->
+                <a href="https://web.whatsapp.com/send?phone=5583987754278" target="_blank">
+                    <button class="compre">R$ 70,00 <i class='bx bxs-purchase-tag-alt' ></i></button>
+                </a>
+        </div>
+        <div class="item">
+                <h3></h3>
+                <img src="https://i.pinimg.com/736x/ec/28/de/ec28deca10eed7d4a2d2e0294d55a275.jpg" alt="item2">
+                <p>Móvel Multiuso</p>
+                <!--<h6>R$200.00</h6>-->
+                <a href="https://web.whatsapp.com/send?phone=5583987754278" target="_blank">
+                    <button class="compre">R$ 200.00 <i class='bx bxs-purchase-tag-alt' ></i></button>
+                </a>
+        </div>
+        <div class="item">
+                <h3></h3>
+                <img src="https://i.pinimg.com/564x/fe/63/31/fe6331aa9f5545a21c74086c3a054da5.jpg" alt="item1">
+                <p>Comedouro para Gatos</p>
+                <!--<h6>R$80.00</h6>-->
+                <a href="https://web.whatsapp.com/send?phone=5583987754278" target="_blank">
+                    <button class="compre">R$ 80,00 <i class='bx bxs-purchase-tag-alt' ></i></button>
+                </a>
+        </div>
+        <div class="item">
+            <h3></h3>
+            <img src="https://i.pinimg.com/564x/52/12/d6/5212d69ca856fae860b1318eac549a88.jpg" alt="item1">
+            <p>Móvel para seu pet</p>
+            <!--<h6>R$90.00</h6>-->
+            <a href="https://web.whatsapp.com/send?phone=5583987754278" target="_blank">
+                <button class="compre">R$ 90,00 <i class='bx bxs-purchase-tag-alt' ></i></button>
+            </a> 
+        </div>
+        <div class="item">
+            <h3></h3>
+                <img src="https://i.pinimg.com/736x/cd/ed/69/cded69c994af84e7f285222b804c195a.jpg" alt="item1">
+                <p>Cama para Cachorros</p>
+                <!--<h6>R$150.00</h6>-->
+                <a href="https://web.whatsapp.com/send?phone=5583987754278" target="_blank">
+                    <button class="compre">R$ 150.00 <i class='bx bxs-purchase-tag-alt' ></i></button>
+                </a>
+        </div>
+    </div>
+</div>
+<h3 class="titulo_formulario">Cadastre-se para receber novidades sobre os produtos da loja!</h3>
+    <section class="formulario">
+    <form method="post" action="cadastrado.html">
+        <div class="div">
+            <label>Nome:</label>
+            <input type=”text” placeholder="Digite seu nome" name=“nome” required>
+            <label>E-mail:</label>
+            <input type="email" placeholder="Digite seu email" name="email" required>
+            <label>Telefone:</label>
+            <input type="tel" placeholder="Digite seu telefone" name="Telefone" required>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Apagar</button>
+        </div>
+    </form>
+    </section> 
+        <!-- footer-->
+        <footer id="footer-rolamento">
+            <div id="container-footer">
+                <div class="row-footer">
+                    
+                    <div class="footer-col">
+                        <h4>Raimundo's Madeiras</h4>
+                        <ul>
+                            <li><a href="#"> Quem somos </a></li>
+                            <li><a href="#shop"> Catálogo </a></li>
+                        </ul>
+                    </div>
+                 
+                    <div class="footer-col" id="rolamento-ideias">
+                        <h4 >Idéias<br>diferentes</h4>
+                        <ul>
+                            <li><a href="https://br.pinterest.com/jtzachi/artesanato-de-madeira/" target="_blank"><i class="fa-brands fa-pinterest-p"></i> Pinterest </a></li>
+                            <li><a href="https://www.youtube.com/results?search_query=ideias+de+moveis+de+madeira+pinus" target="_blank"> <i class="fa-brands fa-square-youtube"></i>  youtube</i></a></li>
+                        </ul>
+                    </div>
+         
+                    <div class="footer-col">
+                        <h4 >Rede social</h4>
+                        <ul>
+                            <li>
+                                <a href="https://www.instagram.com/raimundos_madeiira_/" target="_blank" class="btn">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>instagram</span>
+                             </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Nossa localidade</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.0952958411945!2d-34.871976!3d-7.114954600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace7faea3b5aeb%3A0x6b108f1469286cbb!2sR.%20Vicente%20Jardim%2C%20131%20-%20Tambi%C3%A1%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058020-770!5e0!3m2!1spt-BR!2sbr!4v1716681748287!5m2!1spt-BR!2sbr" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+    
+                    <!--end footer col-->
+                </div>
+            </div>   
+        </footer>
+        <!-- Botão "Voltar para o topo" -->
+    <a href="#voltar-ao-topo" class="btn-voltar-topo" id="voltar-topo">Voltar para o topo</a>
+    <div id="voltar-ao-topo"></div> <!-- âncora para o topo -->
+
+</body>
 </html>
