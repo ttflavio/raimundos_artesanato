@@ -1,412 +1,426 @@
-     /*atyle menu*/
-     body, html {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-    }   
+/*Style menu*/
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}   
 
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgb(238, 201, 162);
-        padding: 5px 15px;
-    }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(238, 201, 162);
+    padding: 5px 15px;
+}
 
-    .logo {
-        color: #141111;
-        font-size: 30px;
-        padding-right: 23%;
-        padding-left: 10px;
-        font-family:'Playfair Display', serif;
-    }
+.logo {
+    color: #141111;
+    font-size: 30px;
+    padding-right: 23%;
+    padding-left: 10px;
+    font-family:'Playfair Display', serif;
+}
 
+.nav-links {
+    list-style: none;
+    display: flex;  
+}
+
+.nav-links li {
+    padding: 0 35px;
+}
+
+.nav-links a {
+    color: rgb(17, 15, 15);
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links a:hover{
+    background-color: rgb(150, 75, 0);
+    color: #fff;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-button .line {   /*menu responsigo quando a tela diminui*/
+    width: 25px;
+    height: 5px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+/*responsito*/
+@media (max-width: 768px) {
     .nav-links {
-        list-style: none;
-        display: flex;  
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color:  rgb(175, 133, 90);;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 0;
     }
 
     .nav-links li {
-        padding: 0 35px;
-    }
-
-    .nav-links a {
-        color: rgb(17, 15, 15);
-        text-decoration: none;
-        font-size: 18px;
-    }
-    .nav-links a:hover{
-        background-color: rgb(150, 75, 0);
-    }
-
-    .toggle-checkbox {
-        display: none;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
     }
 
     .toggle-button {
-        display: none;
-        flex-direction: column;
-        cursor: pointer;
+        display: flex;
     }
 
-    .toggle-button .line {
-        width: 25px;
-        height: 5px;
-        background-color: white;
-        margin: 5px;
-        transition: all 0.3s ease;
+    .toggle-checkbox:checked ~ .nav-links {
+        display: flex;
     }
-    /*responsito*/
-    @media (max-width: 768px) {
-        .nav-links {
-            display: none;
-            flex-direction: column;
-            width: 100%;
-            background-color:  rgb(175, 133, 90);;
-            position: absolute;
-            top: 60px;
-            left: 0;
-            padding: 0;
-        }
-
-        .nav-links li {
-            width: 100%;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .toggle-button {
-            display: flex;
-        }
-
-        .toggle-checkbox:checked ~ .nav-links {
-            display: flex;
-        }
     }
     #voltar-ao-topo{
-        padding: 0;
+     padding: 0;
     }
-    /*style header*/
-        body{
-            margin: 0;
-            font-family: "Quicksand", sans-serif;
-            background-color: #fff6ef;
-        }
-        section.sobre {
-            padding: 40px 4%;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        section.sobre .flex {
-            display: flex;
-            align-items: center;
-            gap: 90px;
-            text-align: left;
-        }
-        .sobre .txt-sobre h2 {
-            font-size: 30px;
-            line-height: 40px;
-            margin-bottom: 30px;
-            position: relative;
-            display: inline-block;
-            color: #5d2417;
-            font-weight: bold;
-        }
-        .produtos-disponiveis {
-            font-size: 30px;
-            line-height: 30px;
-            margin-bottom: 30px;
-            color: #5d2417;
-            font-weight: bold;
-        }
-       
-        .sobre .txt-sobre h2 span {
-            color: rgb(165, 82, 0);
-            display: block;
-        }
-        .sobre .txt-sobre h2::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            width: 100%;
-            height: 3px;
-            background-color: rgb(165, 82, 0);
-            transform: scaleX(0);
-            transform-origin: bottom right;
-            transition: transform 0.3s ease-out;
-        }
-        .sobre .txt-sobre h2:hover::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
-        .sobre .txt-sobre p {
-            margin: 50px 0;
-            font-size: 18px;
-            text-align: justify;
-            line-height: 1.9em;
-            background-color: rgb(231, 160, 89);
-            padding: 20px;
-            border-radius: 15px;
-        }
-        .img-cabeçalho {
-            height: 150%;
-            display: flex;
-            align-items: center;
-        }
-        .img-cabeçalho img {
-            max-width: 130%;
-            padding-top: 70%;
-            height: auto;
-            border-radius: 20px;
-        }
-        #rolamento-header{ /*direcionamento do menu*/
-            padding: 0;
-        }
-        @media (max-width: 768px) {
-            section.sobre .flex {
-                flex-direction: column;
-                text-align: center;
-            }
-            .img-cabeçalho img {
-                padding-top: 10%;
-                max-width: 100%;
-                height: auto;
-            }
-        }
-        /*style catalogo*/
-        body{
-            margin: 0;
-            font-family: sans-serif;
-            background-color: #fff6ef;
-            font-family: "Quicksand", sans-serif;
-        }
-        a{
-            text-decoration: none;
-        }
-
-        #shop{
-            padding: 150px ;
-        }
-
-        .galeria {
-            display:grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, auto));
-            align-items: center;
-            gap: 5rem;
-            text-align: center;  
-        }
-        .item{
-            border-radius: 20px;
-            box-shadow: 0 20px 60px  rgb(0,0,0,0.30), 0 8px 8px rgb(0,0,0,0.22);
-            transition: .5s;
-            background: #f3f2f0;  
-        }  
-        item:hover{
-            box-shadow: 0 3px 6px rgb(0,0,0,0.16), 0 3px 6px rgb(0,0,0,0.23);
-            transform: scale(1.1);
-        }
-        .galeria img{
-            width:100%;
-            margin: 0 auto;
-            display:flow-root;   
-        }
-        p{
-            text-align: center;
-            color: #000000;
-            padding-top:  10px ;
-            padding-right: 8px;
-        }
-        .galeria button{
-            text-align:end;
-            font-size: 15px;
-            color: #7cb674;
-            width: 100%;
-            padding: 15px;
-            border: 0;
-            outline: none;
-            cursor: pointer;
-            margin-top: 5px;
-            border-bottom-right-radius: 20px;
-            border-bottom-left-radius: 20px;
-            background-color: rgb(43, 34, 25);
-            transition-duration: 0.5s;
-        }
-        .compre:hover{
-            background-color: #7cb674;
-            color: white;
-        }
-
-
-    /*estilo formulario*/
-        .titulo_formulario{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 30px;
-            background-color:rgb(175, 133, 90);
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;  
-        }
-        .formulario{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 70vh;
-            font-family: Arial, Helvetica, sans-serif;           
-        }
-        .div{
-            display: flex;
-            flex-direction: column;
-            color:rgb(175, 133, 90) ;  
-             
-        }
-        form input{
-            outline: unset;
-            padding: 10px;
-            min-width: 300px;
-            border: 1px solid rgb(175, 133, 90) ;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            margin-top: 10px;
-            font-family: Arial, Helvetica, sans-serif;  
-        }
-        form button{
-            padding: 5px;
-            min-width:150px;
-            border: 1px solid rgb(175, 133, 90) ;
-            border-radius: 10px;
-            margin-top: 10px;
-            margin-left: 5px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-            background-color:rgb(175, 133, 90) ; 
-            cursor: pointer;
-        }
-        form label{
-            margin-left: 10px;
-        }
-
-        /*style footer*/
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        footer{
-            background-color:rgb(175, 133, 90);;
-            padding: 20px 0;
-        }
-        #container-footer{
-            max-width: 1600px;
-            padding: 0 4%;
-        }
-        .row-footer{
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .footer-col{
-            width: 25%;
-            padding: 0 50px;
-        }
-        .footer-col h4{
-            font-size: 20px;
-            color: white;
-            margin-bottom: 50px;
-            font-weight: 40;
-            position: relative;
-            font-family: Courier, monospace;
-
-        }
-        .footer-col ul{
-            list-style: none;
-        }
-        .footer-col ul li{
-            margin: 18px 0;
-        }
-        .footer-col ul li a{
-            font-size: 16px;
-            text-transform: capitalize;
-            color: rgb(8, 7, 7);
-            text-decoration: none;
-            font-weight: 400;
-            display: block;
-            transition: all 0.3s ease;
-        }
-        .footer-col ul li a:hover{
-            color: #cecdcd;
-            padding-left: 10px;
-        }
-        #rolamento-ideias{
-            padding: 0; /*direcionamento do menu */
-        }
-
-        /* Responsivo */
-        @media (max-width: 800px) {
-            .footer-col{
-                width: 30%;
-                margin-bottom: 50px;
-            }
-        }
-        @media (max-width:600px) {
-            .footer-col{
-                width: 50%;
-            }
-        logo{
-            display: flex;
-            
-            flex-direction: column; 
-        }
-        .header{
-           flex-direction: column-reverse;
-           display: flex;
-        }
+    .navbar {
+         flex: 2; /* Ocupa todo o espaço disponível */
+    }
+    .logo {
+        font-size: 30px; /* Reduz o tamanho do logo */
+        padding-right: 10px; /* Ajusta o padding para telas menores */
     }
     
-    /* Estilos para o botão "Voltar para o topo" */
-    .btn-voltar-topo {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: rgb(190, 158, 126);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
 
-        .btn-voltar-topo::after {
-            content: '\2191'; /* Código  para uma seta para cima */
-            margin-left: 5px;
-        }
+    @media (min-width: 1200px) {
+        .nav-links li {
+            padding: 0 50px; /* Aumenta o espaçamento horizontal entre os itens de navegação */
+    }
+        .logo{
+            padding-right: 480px;
 
-        .btn-voltar-topo:hover {
-            background-color: rgb(150, 75, 0);
+    }
+    @media (min-width: 1200px) {
+        .nav-links {
+            display: flex; /* Exibe todas as opções de navegação em uma linha */
         }
-        .cadastro{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background:rgb(175, 133, 90);
+}
+}   
+  
+/*style header*/
+    body{
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+        background-color: #fff6ef;
+    }
+    section.sobre {
+        padding: 40px 4%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    section.sobre .flex {
+        display: flex;
+        align-items: center;
+        gap: 90px;
+        text-align: left;
+    }
+    .sobre .txt-sobre h2 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 30px;
+        position: relative;
+        display: inline-block;
+        color: #5d2417;
+        font-weight: bold;
+        
+    }
+    .produtos-disponiveis {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 30px;
+        color: #5d2417;
+        font-weight: bold;
+    }
+   
+    .sobre .txt-sobre h2 span {
+        color: rgb(165, 82, 0);
+        display: block;
+    }
+    .sobre .txt-sobre h2::after { /*o efeito que da embaixo do nome Somos a raimu...*/
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 100%;
+        height: 3px;
+        background-color: rgb(165, 60, 0);
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.5s ease-out;
+        
+    }
+    .sobre .txt-sobre h2:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    .sobre .txt-sobre p {
+        margin: 50px 0;
+        font-size: 18px;
+        text-align: justify;
+        line-height: 1.9em;
+        background-color: rgb(231, 160, 89);
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .img-cabeçalho {
+        height: 150%;
+        display: flex;
+        align-items: center;
+    }
+    .img-cabeçalho img {
+        max-width: 130%;
+        padding-top: 70%;
+        height: auto;
+        border-radius: 20px;
+    }
+    #rolamento-header{ /*direcionamento do menu*/
+        padding: 0;
+    }
+    /*responsivo*/
+    @media (max-width: 768px) {
+        section.sobre .flex {
             flex-direction: column;
-            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
         }
-        .cad_texto{
-            color: white;
-            margin-bottom: 10px;
+        .img-cabeçalho img {
+            padding-top: 10%;
+            max-width: 100%;
+            height: auto;
         }
-        .inicio{
-            padding: 10px 40px;
-            background: white;
-            text-decoration: none;
-            color:rgb(175, 133, 90);
-            font-size: 18px;
-            border-radius: 10px;
-            margin-top: 20px;
+    }
+
+    /*style catalogo*/
+    body{
+        margin: 0;
+        font-family: sans-serif;
+        background-color: #fff6ef;
+        font-family: "Quicksand", sans-serif;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+
+    #shop{
+        padding: 150px ;
+    }
+
+    .galeria {
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+        align-items: center;
+        gap: 5rem;
+        text-align: center;  
+    }
+
+    .item{
+        border-radius: 20px;
+        box-shadow: 0 20px 60px  rgb(0,0,0,0.30), 0 8px 8px rgb(0,0,0,0.22);
+        transition: .5s;
+        background: #f3f2f0;  
+
+    }  
+    .item:hover{
+        box-shadow: 0 3px 6px rgb(0,0,0,0.16), 0 3px 6px rgb(0,0,0,0.23);
+        transform: scale(1.1); /* Modifica o tamanho da caixa ao passar o mouse */
+        
+    }
+    .galeria img{
+        width:100%;
+        margin: 0 auto;
+        display:flow-root;   
+    }
+    .item:hover img {
+        box-shadow: 0 3px 6px rgb(0,0,0,0.16), 0 3px 6px rgb(0,0,0,0.23);
+}
+    p{
+        text-align: center;
+        color: #000000;
+        padding-top:  10px ;
+        padding-right: 8px;
+    }
+    .galeria button{              /*borão de compra WPP*/
+        text-align:end;
+        font-size: 15px;
+        color: #7cb674;
+        width: 100%;
+        padding: 15px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        margin-top: 5px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: rgb(43, 34, 25);
+        transition-duration: 0.5s;
+    }
+    .compre:hover{
+        background-color: #7cb674;
+        color: white;
+    }
+
+
+/*estilo formulario*/
+    .titulo_formulario{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        background-color:rgb(175, 133, 90);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;  
+    }
+    .formulario{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        font-family: Arial, Helvetica, sans-serif;           
+    }
+    .div{
+        display: flex;
+        flex-direction: column;
+        color:rgb(175, 133, 90) ;  
+         
+    }
+    form input{
+        outline: unset;
+        padding: 10px;
+        min-width: 300px;
+        border: 1px solid rgb(175, 133, 90) ;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;  
+    }
+    form button{
+        padding: 5px;
+        min-width:150px;
+        border: 1px solid rgb(175, 133, 90) ;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-left: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color:rgb(175, 133, 90) ; 
+        cursor: pointer;
+    }
+    form label{
+        margin-left: 10px;
+    }
+
+    /*style footer*/
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    footer{
+        background-color:rgb(175, 133, 90);;
+        padding: 20px 0;
+    }
+    #container-footer{
+        max-width: 1600px;
+        padding: 0 4%;
+    }
+    .row-footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-col{
+        width: 25%;
+        padding: 0 50px;
+    }
+    .footer-col h4{
+        font-size: 20px;
+        color: white;
+        margin-bottom: 50px;
+        font-weight: 40;
+        position: relative;
+        font-family: Courier, monospace;
+
+    }
+    .footer-col ul{
+        list-style: none;
+    }
+    .footer-col ul li{
+        margin: 18px 0;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: rgb(8, 7, 7);
+        text-decoration: none;
+        font-weight: 400;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: #cecdcd;
+        padding-left: 10px;
+    }
+    #rolamento-ideias{
+        padding: 0; /*direcionamento do menu */
+    }
+
+    /* Responsivo */
+    @media (max-width: 800px) {
+        .footer-col{
+            width: 30%;
+            margin-bottom: 50px;
         }
+    }
+    @media (max-width:600px) {
+        .footer-col{
+            width: 50%;
+        }
+    logo{
+        display: flex;
+        
+        flex-direction: column; 
+    }
+    .header{
+       flex-direction: column-reverse;
+       display: flex;
+    }
+}
+
+/* Estilos para o botão "Voltar para o topo" */
+.btn-voltar-topo {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: rgb(190, 158, 126);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-voltar-topo::after {
+        content: '\2191'; /* Código  para uma seta para cima */
+        margin-left: 5px;
+    }
+
+    .btn-voltar-topo:hover {
+        background-color: rgb(150, 75, 0);
+    }
