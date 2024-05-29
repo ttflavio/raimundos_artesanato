@@ -99,7 +99,7 @@ body, html {
 
     @media (min-width: 1200px) {
         .nav-links li {
-            padding: 20px 0; /* Aumenta o espaçamento horizontal entre os itens de navegação */
+            padding: 20px; /* Aumenta o espaçamento horizontal entre os itens de navegação */
     }
         .logo{
             padding-right: 480px;
